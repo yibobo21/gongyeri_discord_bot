@@ -3,6 +3,7 @@
 
 ## 모듈
 import discord # 디스코드 모듈 불러오기
+import os # 토큰 
 from discord.ext import commands, tasks # 명령어 확장팩 불러오기
 from itertools import cycle # 상태 루프 걸때 필요한 팩
 
@@ -20,7 +21,7 @@ import time
 
 ## 예리봇의 시작
 bot = commands.Bot(command_prefix = "!") # 명령어 접두사 "!" 지정
-token = "" # 내새끼 주민번호
+# token = "" 내새끼 주민번호
 
 
 ## 봇이 online되면 제일 먼저 수행되는 것들
@@ -161,7 +162,7 @@ async def 공주(ctx):
     await ctx.send("예리 왜 불렁 > _<")
 
 
-
-bot.run(token)
+access_token = os.environ["yeri_token"]
+bot.run(access_token)
 
 
