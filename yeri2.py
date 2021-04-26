@@ -1,5 +1,6 @@
 # discord 모듈은 외부 모듈이기 때문에 cmd에서 pip하고 와야함
 # itertools 모듈은 내장 모듈이기때문에 따로 pip하지 않아도 됨
+# heroku 호스팅 참조 [ https://www.youtube.com/watch?v=Lao0KUU7Nm4 ]
 
 ## 모듈
 import discord # 디스코드 모듈 불러오기
