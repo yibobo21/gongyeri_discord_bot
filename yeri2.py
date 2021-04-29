@@ -116,6 +116,12 @@ async def 로또(ctx):
     lotto = range(1, 46)
     await ctx.send(f"{random.sample(lotto,6)} 당첨되면 예리한테 치킨 쏘기!")
 
+## 연금로또번호 생성기
+@bot.command()
+async def 연금(ctx):
+    lotto = range(0, 9)
+    await ctx.send(f"{random.sample(lotto,6)} 당첨되면 정기 구독하기!_!")    
+    
 ## 게임 추첨기
 @bot.command()
 async def 게임(ctx):
