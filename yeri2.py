@@ -45,7 +45,7 @@ async def on_ready(): # on_ready 라는 함수를 생성하여, 봇이 실행되
 
 ## 상태 설정 코드
 # 상태 리스트를 만들어서 playing 변수에 넣어줌
-playing = cycle(["예리는 착한 봇", "말 안드뤄!", "마카롱 옴뇸뇸", "롤 생각"])
+playing = cycle(["예리는 착한 봇", "말 안드뤄!", "마카롱 옴뇸뇸", "공부", "롤 생각"])
 
 # loop걸어줌
 @tasks.loop(minutes=45)
